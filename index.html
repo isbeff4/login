@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+    <h2>Login</h2>
+    </header>
+    <form action="index.php" method="POST">
+        
+        <label>Usuário:</label>
+        <input type="text" name="usuario" placeholder="digite seu username" required><br><br><br>
+
+        <label>Senha:</label>
+        <input type="password" name="senha" placeholder="sua senha aqui" required><br><br><br><br>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>
